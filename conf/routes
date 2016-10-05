@@ -1,0 +1,18 @@
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+
+#####################################################################################
+
+#Mapping for the home page 
+GET   /                         controllers.HomepageController.loginpage
+
+POST /signinvalidate             controllers.SigninValidateController.validateUsernamePassword
+
+POST /signupsave                     controllers.SignUpController.SignupUser
+
+GET /signup                      controllers.SignUpController.signuppage
+
+
+GET   /propreitarydata            controllers.PropreitarydataController.DataEndPoint(drugname:String)

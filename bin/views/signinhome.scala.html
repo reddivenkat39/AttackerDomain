@@ -1,0 +1,19 @@
+@(error:String)
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Home</title>
+</head>
+<body>
+<div class="conatiner" id="signinform">
+<form action="/signinvalidate" method="post">
+<em>@error</em>
+<br>
+<input type="text" value="" name="username" placeholder="username"><br>
+<input type="password" value="" name="password" placeholder="password"><br>
+<input type="submit" value="signin">
+</form>
+</div>
+</body>
+</html>
